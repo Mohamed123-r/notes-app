@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class NoteViewBody extends StatelessWidget {
   const NoteViewBody({super.key});
@@ -27,14 +26,49 @@ class NoteItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         color: Color(0xffFFCD7B),
       ),
-      child: ListTile(
-        title: Text(
-          'Flutter tips',
-          style: TextStyle(color: Colors.black),
-        ),
-        subtitle: Text('Flutter tips',
-          style: TextStyle(color: Colors.black),),
-        //leading: Icon(),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 16.0,top: 24,bottom: 16),
+            child: ListTile(
+              title: Text(
+                'Flutter tips',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 24,
+                ),
+              ),
+              subtitle: Padding(
+                padding: const EdgeInsets.only(top: 16.0),
+                child: Text(
+                  'Build your career with thew samy ',
+                  style: TextStyle(
+                    color: Colors.black.withOpacity(0.5),
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+              trailing: IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    FontAwesomeIcons.trash,
+                    color: Colors.black,
+                    size: 27,
+                  )),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 24.0,bottom: 16),
+            child: Text(
+              'May22 ,2023',
+              style: TextStyle(
+                color: Colors.black.withOpacity(0.7),
+                fontSize: 16,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
