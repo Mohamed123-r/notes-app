@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/note_view_body.dart';
+
 
 class NotesView extends StatelessWidget {
   const NotesView({super.key});
@@ -16,7 +18,7 @@ class NotesView extends StatelessWidget {
         ),
         actions: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 8.0),
+            padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 16.0),
             child: Container(
               height: 47,
               width: 47,
@@ -35,6 +37,7 @@ class NotesView extends StatelessWidget {
           ),
         ],
       ),
+      body: NoteViewBody(),
       //body:NoteViewBody() ,
     );
   }
