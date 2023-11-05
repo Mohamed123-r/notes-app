@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-
-
 import 'note_list_view.dart';
 
 class NoteViewBody extends StatelessWidget {
@@ -15,11 +13,15 @@ class NoteViewBody extends StatelessWidget {
         right: 16,
         left: 16,
         top: 8,
+        bottom: 8,
       ),
       child: Column(
-        children: [Expanded(child: NoteListView())],
+        children: [
+          Expanded(
+            child: NoteListView(),
+          ),
+        ],
       ),
     );
   }
 }
-

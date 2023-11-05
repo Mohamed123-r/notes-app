@@ -44,7 +44,7 @@ class NoteItem extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(right: 24.0, bottom: 16),
+            padding: const EdgeInsets.only(right: 24.0, bottom: 16,),
             child: Text(
               'May22 ,2023',
               style: TextStyle(
