@@ -15,7 +15,7 @@ class CustomIcon extends StatelessWidget {
           color: Colors.white.withOpacity(0.1),
         ),
         child: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.search,
             size: 27,
           ),

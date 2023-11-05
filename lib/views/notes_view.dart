@@ -10,7 +10,7 @@ class NotesView extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: Text(
+        title: const Text(
           'Notes',
           style: TextStyle(fontSize: 28),
         ),
@@ -25,7 +25,7 @@ class NotesView extends StatelessWidget {
                 color: Colors.white.withOpacity(0.1),
               ),
               child: IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.search,
                   size: 27,
                 ),
