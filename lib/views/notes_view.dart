@@ -2,13 +2,16 @@ import 'package:flutter/material.dart';
 
 import '../widgets/note_view_body.dart';
 
-
 class NotesView extends StatelessWidget {
   const NotesView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add,),
+      ),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -18,7 +21,8 @@ class NotesView extends StatelessWidget {
         ),
         actions: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 16.0),
+            padding:
+                const EdgeInsets.symmetric(vertical: 4.0, horizontal: 16.0),
             child: Container(
               height: 47,
               width: 47,
