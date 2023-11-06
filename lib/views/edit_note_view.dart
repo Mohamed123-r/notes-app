@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/edit_note_view_bode.dart';
+
 class EditNoteView extends StatelessWidget {
   const EditNoteView({super.key});
 
@@ -10,7 +12,7 @@ class EditNoteView extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: const Text(
-          'Notes',
+          'Edit Notes',
           style: TextStyle(fontSize: 28),
         ),
         actions: [
@@ -28,7 +30,7 @@ class EditNoteView extends StatelessWidget {
               ),
               child: IconButton(
                 icon: const Icon(
-                  Icons.search,
+                  Icons.check,
                   size: 27,
                 ),
                 onPressed: () {},
@@ -37,6 +39,7 @@ class EditNoteView extends StatelessWidget {
           ),
         ],
       ),
+      body: EditNoteViewBode(),
     );
   }
 }
